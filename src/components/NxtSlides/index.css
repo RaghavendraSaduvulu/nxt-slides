@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header part */
+
+.header {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f8fafc;
+}
+.nxt-slides-logo {
+  width: 75px;
+}
+.header h1 {
+  font-family: Bree serif;
+  color: #0f172a;
+  padding-left: 20px;
+  letter-spacing: 1px;
+}
+
+/* plus button */
+
+.new-btn {
+  align-self: flex-start;
+  margin: 20px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: #f8fafc;
+  font-size: 18px;
+  font-family: Bree serif;
+  border-radius: 5px;
+}
+.plus-icon {
+  width: 15px;
+  margin-right: 10px;
+}
+
+/* slider list and view rule sets */
+
+.slides-list-view-container {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: 90vh;
+  margin: 0;
+}
+.list-container {
+  width: 30%;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  overflow-y: scroll;
+  height: 100%;
+  padding: 10px 10px 40px 0px;
+}
+.list-item {
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.active-item-bg {
+  background-color: #f8fafc;
+}
+
+.slide {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/nxt-slides-bg.png');
+  background-size: cover;
+  height: 140px;
+  margin: 20px;
+  margin-top: 0;
+  margin-left: 10px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.slide h1 {
+  margin: 0;
+  font-size: 18px;
+  font-family: Bree serif;
+  color: #0967d2;
+}
+.slide p {
+  font-family: bree serif;
+  font-size: 12px;
+  color: #475569;
+  font-weight: bold;
+}
+
+/* view details  */
+
+.view-container {
+  flex-grow: 1;
+  margin: 40px;
+  border-radius: 10px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/nxt-slides-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.heading-input {
+  background-color: #f8fafc;
+  margin-top: 12px;
+  font-family: Bree Serif;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #0967d2;
+  border: none;
+  outline: none;
+}
+
+.active-heading {
+  margin-top: 10px;
+  font-family: Bree serif;
+  color: #0967d2;
+  font-size: 40px;
+}
+
+.description-input {
+  background-color: #f8fafc;
+  font-family: Bree serif;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: #334155;
+  font-weight: bold;
+}
+
+.active-description {
+  font-family: bree serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #334155;
+  letter-spacing: 0.5px;
+}
